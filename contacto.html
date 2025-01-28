@@ -1,47 +1,62 @@
-<h1>Contacto</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-<div class="nav">
-    <a href="index.html">Index</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="personaje.html">Personaje</a>
-</div>    
+    <div class="container mt-5">
+        <!-- Menú desplegable -->
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"> Menú </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="index.html">Index</a></li>
+                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="personaje.html">Personaje</a></li>
+            </ul>
+        </div>
+    </div>
 
-<form action="" method="get">
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" required>
-    
-    <label for="correo">Correo</label>
-    <input type="email" id="correo" name="correo" required>
-    
-    <fieldset class="radio-group">
-        <legend>Género</legend>
-        <label for="masculino">
-            <input type="radio" id="masculino" name="genero" value="masculino"> Masculino
-        </label>
-        <label for="femenino">
-            <input type="radio" id="femenino" name="genero" value="femenino"> Femenino
-        </label>
-    </fieldset>
-    
-    <label for="contrasena">Contraseña</label>
-    <input type="password" id="contrasena" name="contrasena" required>
-    
-    <label for="comentario">Comentario</label>
-    <textarea id="comentario" name="comentario" rows="4" required></textarea>
-    
-    <label for="ciudad">Ciudad</label>
-    <select id="ciudad" name="ciudad" required>
-        <option value="guadalajara">Guadalajara</option>
-        <option value="zapopan">Zapopan</option>
-        <option value="tonala">Tonalá</option>
-        <option value="otra">Otra</option>
-    </select>
-    
-    <div class="checkbox-group">
-        <label for="interes">
-            <input type="checkbox" id="interes" name="interes" value="sí"> Me interesa contratarte
-        </label>
+    <div class="container mt-3 text-center bg-dark text-white p-3 rounded">
+        <h1 class="mb-4">Contacto</h1>
     </div>
     
-    <button type="submit">Enviar</button>
-</form>
+    <!-- Formulario -->
+    <div class="bg-light d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow p-4" style="max-width: 500px; width: 100%;">
+            <form action="" method="get" class="needs-validation" novalidate>
+                
+                <div class="mb-3">
+                    <label for="nombre" class="form-label text-primary">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="correo" class="form-label text-primary">Correo</label>
+                    <input type="email" id="correo" name="correo" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="comentario" class="form-label text-primary">Comentario</label>
+                    <textarea id="comentario" name="comentario" rows="4" class="form-control" required></textarea>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="ciudad" class="form-label text-primary">Clasificacion</label>
+                    <select id="ciudad" name="ciudad" class="form-select" required>
+                        <option value="contratacion">Contratacion</option>
+                        <option value="pregunta">Pregunta</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
