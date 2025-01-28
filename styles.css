@@ -6,7 +6,7 @@ body {
   }
 
   .personaje{
-    color: #53fffa;
+    color: #008cba;
   }
   
   .container1 {
@@ -17,4 +17,41 @@ body {
     width: 82%;
     margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    border-radius: 20px;
+    max-width: 250px;
+    height: auto;
+    align-items: center;
+  }
+
+  p{
+    margin-top: 20px;
+    font-size: 20px; /* Aumenta el tamaño de la letra */
+  }
+
+  .movie {
+    text-align: center; /* Centrar el contenido dentro del <section> */
+  }
+
+  .movie ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+  }
+
+  .movie ul li {
+    font-size: 20px; /* Aumenta el tamaño de la letra */
+    margin: 10px 0; /* Espaciado entre los elementos */
+  }
+
+  a {
+    color: #008cba;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
   }
